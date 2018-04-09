@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository hosts ontologies developed within the [MOEEBIUS](www.moeebius.eu) project.
+This repository hosts ontologies developed within the [MOEEBIUS](http://www.moeebius.eu) project.
 
 The ontology reuses through a full import the [BRICK](www.brickschema.org) ontology (Balaji et al., 2018) which is released under a BSD 3-clause license . It reuses fragments of the [Ontology for units of Measure (OM)](http://www.ontology-of-units-of-measure.org/resource/om-2/) ontology (Rihgersberg et al., 2011), which is released under a creative commons share alike license.
 
