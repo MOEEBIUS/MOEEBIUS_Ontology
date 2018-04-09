@@ -1,0 +1,520 @@
+@prefix : <https://w3id.org/moeebius/MOEEBIUSOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/moeebius/MOEEBIUSOntology> .
+
+<https://w3id.org/moeebius/MOEEBIUSOntology> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://w3id.org/moeebius/MOEEBIUSOntology-0.0.1> ;
+                                              owl:imports <https://brickschema.org/schema/1.0.2/Brick> ;
+                                              <http://purl.org/dc/terms/contributor> <https://www.researchgate.net/profile/Georgios_Kontes> ,
+                                                                                     "Georgios D. Kontes"^^xsd:string ;
+                                              <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                                 <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                                 <https://www.researchgate.net/profile/Haonan_Qiu2> ,
+                                                                                 "Georg Ferdinand Schneider"^^xsd:string ,
+                                                                                 "Haonan Qiu"^^xsd:string ;
+                                              <http://purl.org/dc/terms/description> """The MOEEBIUS ontology extends the BRICK [1] and OM [2] ontologies to serve as a domain model for the MOEEBIUS demonstration sites.
+
+This ontology is developed using the Protege tool [3].
+        
+[1] B. Balaji, A. Bhattacharya, G. Fierro, J. Gao, J. Gluck, D. Hong, A. Johansen, J. Koh,
+J. Ploennigs, Y. Agarwal, M. Berges, D. Culler, R. K. Gupta, M. B. Kjaergaard, M. Srivastava, and K. Whitehouse. Brick : Metadata schema for portable smart building applications. Applied Energy, 2018.
+
+[2] H. Rijgersberg, M. Wigham, and J. Top. How semantics can improve engineering processes: A case of units of measure and quantities. Advanced Engineering Informatics, 25(2):276-287, 2011.
+
+[3] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003, 2015."""@en ;
+                                              <http://purl.org/dc/terms/identifier> "https://w3id.org/moeebius/MOEEBIUSOntology#"^^xsd:string ;
+                                              <http://purl.org/dc/terms/issued> "2018-03-26"^^xsd:date ;
+                                              <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                              <http://purl.org/dc/terms/modified> "2018-04-06"^^xsd:date ;
+                                              <http://purl.org/dc/terms/rights> "Copyright (c) 2018 Technische Hochschule Nuernberg Georg Simon Ohm. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) <http://creativecommons.org/licenses/by-sa/4.0>. The ontology reuses through a full import the BRICK ontology which is released under a BSD 3-clause license (see www.brickschema.org). It reuses fragments of the Ontology for units of Measure (OM) ontology, which is released under a creative commons share alike license."@en ;
+                                              <http://purl.org/dc/terms/title> "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites."@en ;
+                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "moeebius"^^xsd:string ;
+                                              <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                              rdfs:label "MOEEBIUS Ontology"@en ;
+                                              rdfs:seeAlso <http://brickschema.org> ,
+                                                           <http://protege.stanford.edu> ,
+                                                           <http://www.moeebius.eu> ,
+                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
+                                              owl:versionInfo "v0.0.1"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#bepsID
+:bepsID rdf:type owl:AnnotationProperty ;
+        rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID
+:cassandraID rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity
+:hasQuantity rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://brickschema.org/schema/1.0.2/Brick#Point> ;
+             rdfs:range <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain <https://brickschema.org/schema/1.0.2/Brick#Point> ;
+         rdfs:range <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy
+:isSimulatedBy rdf:type owl:ObjectProperty ;
+               rdfs:comment "This is a comment"@en ;
+               rdfs:label "This is a label"@en .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#simulates
+:simulates rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> rdf:type owl:Class .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> ;
+                                                                             rdfs:seeAlso <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> rdf:type owl:Class ;
+                                                                     <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel> "unit of measure"@en ,
+                                                                                                                                                      "unit of measurement"@en ;
+                                                                     rdfs:comment "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."@en ;
+                                                                     rdfs:label "unit"@en .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Air_Flow
+<https://brickschema.org/schema/1.0.2/Brick#Air_Flow> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#CO2_Level_Sensor
+<https://brickschema.org/schema/1.0.2/Brick#CO2_Level_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Electrical_Power_Meter
+<https://brickschema.org/schema/1.0.2/Brick#Electrical_Power_Meter> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Energy_Meter
+<https://brickschema.org/schema/1.0.2/Brick#Energy_Meter> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Equipment
+<https://brickschema.org/schema/1.0.2/Brick#Equipment> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Flow
+<https://brickschema.org/schema/1.0.2/Brick#Flow> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#HVAC
+<https://brickschema.org/schema/1.0.2/Brick#HVAC> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Lighting_System_Luminance_Sensor
+<https://brickschema.org/schema/1.0.2/Brick#Lighting_System_Luminance_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Lighting_System_Luminance_Setpoint
+<https://brickschema.org/schema/1.0.2/Brick#Lighting_System_Luminance_Setpoint> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Location
+<https://brickschema.org/schema/1.0.2/Brick#Location> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Occupancy_Sensor
+<https://brickschema.org/schema/1.0.2/Brick#Occupancy_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#On_Off_Command
+<https://brickschema.org/schema/1.0.2/Brick#On_Off_Command> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#PIR_Sensor
+<https://brickschema.org/schema/1.0.2/Brick#PIR_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Point
+<https://brickschema.org/schema/1.0.2/Brick#Point> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Sensor
+<https://brickschema.org/schema/1.0.2/Brick#Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Space_Heater
+<https://brickschema.org/schema/1.0.2/Brick#Space_Heater> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Water_Flow
+<https://brickschema.org/schema/1.0.2/Brick#Water_Flow> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Zone_Air_Temperature_Sensor
+<https://brickschema.org/schema/1.0.2/Brick#Zone_Air_Temperature_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.2/Brick#Zone_Humidity_Sensor
+<https://brickschema.org/schema/1.0.2/Brick#Zone_Humidity_Sensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command
+:AC_Off_Command rdf:type owl:Class ;
+                rdfs:subClassOf :Off_Command .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command
+:AC_On_Command rdf:type owl:Class ;
+               rdfs:subClassOf :On_Command .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter
+:Active_Electrical_Power_Meter rdf:type owl:Class ;
+                               rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Electrical_Power_Meter> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#CHP
+:CHP rdf:type owl:Class ;
+     rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#HVAC> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Chilled_Water_Flow
+:Chilled_Water_Flow rdf:type owl:Class ;
+                    rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Water_Flow> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Dimming_Lighting_System_Luminance_Setpoint
+:Dimming_Lighting_System_Luminance_Setpoint rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Lighting_System_Luminance_Setpoint> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#District_Heating
+:District_Heating rdf:type owl:Class ;
+                  rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#HVAC> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Domestic_Hot_Water_Flow
+:Domestic_Hot_Water_Flow rdf:type owl:Class ;
+                         rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Water_Flow> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Dwelling
+:Dwelling rdf:type owl:Class ;
+          rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Location> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter
+:Electricity_Energy_Meter rdf:type owl:Class ;
+                          rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Energy_Meter> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Off_Command
+:FCU_Off_Command rdf:type owl:Class ;
+                 rdfs:subClassOf :AC_Off_Command .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#FCU_On_Command
+:FCU_On_Command rdf:type owl:Class ;
+                rdfs:subClassOf :AC_On_Command .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Fuel_Cell
+:Fuel_Cell rdf:type owl:Class ;
+           rdfs:subClassOf :CHP .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine
+:Gas_Engine rdf:type owl:Class ;
+            rdfs:subClassOf :CHP .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Hot_Water_Flow
+:Hot_Water_Flow rdf:type owl:Class ;
+                rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Water_Flow> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_Off_Command
+:Lighting_Off_Command rdf:type owl:Class ;
+                      rdfs:subClassOf :Off_Command .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_On_Command
+:Lighting_On_Command rdf:type owl:Class ;
+                     rdfs:subClassOf :On_Command .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_CO2_Level_Sensor
+:NOD_CO2_Level_Sensor rdf:type owl:Class ;
+                      rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#CO2_Level_Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor
+:NOD_Humidity_Sensor rdf:type owl:Class ;
+                     rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Zone_Humidity_Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Lighting_System_Luminance_Sensor
+:NOD_Lighting_System_Luminance_Sensor rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Lighting_System_Luminance_Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Occupancy_Sensor
+:NOD_Occupancy_Sensor rdf:type owl:Class ;
+                      rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Occupancy_Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Proximity_Sensor
+:NOD_Proximity_Sensor rdf:type owl:Class ;
+                      rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#PIR_Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_TVOC_Sensor
+:NOD_TVOC_Sensor rdf:type owl:Class ;
+                 rdfs:subClassOf :VOC_Sensor .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Zone_Air_Temperature_Sensor
+:NOD_Zone_Air_Temperature_Sensor rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Zone_Air_Temperature_Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command
+:Off_Command rdf:type owl:Class ;
+             rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#On_Off_Command> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#On_Command
+:On_Command rdf:type owl:Class ;
+            rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#On_Off_Command> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Radiator
+:Radiator rdf:type owl:Class ;
+          rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Space_Heater> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow
+:Refrigerant_Flow rdf:type owl:Class ;
+                  rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Flow> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_System
+:Refrigerant_System rdf:type owl:Class ;
+                    rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Equipment> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Site
+:Site rdf:type owl:Class ;
+      rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Location> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Supply_Air_Flow
+:Supply_Air_Flow rdf:type owl:Class ;
+                 rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Air_Flow> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Total_Energy_Electricity_Energy_Meter
+:Total_Energy_Electricity_Energy_Meter rdf:type owl:Class ;
+                                       rdfs:subClassOf :Electricity_Energy_Meter .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor
+:VOC_Sensor rdf:type owl:Class ;
+            rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#Sensor> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#VRF
+:VRF rdf:type owl:Class ;
+     rdfs:subClassOf <https://brickschema.org/schema/1.0.2/Brick#HVAC> ;
+     rdfs:comment "A Variable Refrigerant Unit is a piece of HVAC equipment which converts electricity into heat of cooling of a refrigerant. The refrigerant circulates from the system to terminal units in the respective HVAC zones."@en ;
+     rdfs:label "Variable Refrigerant Flow Unit"@en ;
+     rdfs:seeAlso "https://en.wikipedia.org/wiki/Variable_refrigerant_flow"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Heat
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Heat> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illuminance
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illuminance> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowattHour
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowattHour> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/second-Time
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/second-Time> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#ActivePower
+:ActivePower rdf:type owl:NamedIndividual ,
+                      <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Cold
+:Cold rdf:type owl:NamedIndividual ,
+               <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time
+:cubicMetrePerHour-Time rdf:type owl:NamedIndividual ,
+                                 <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion
+:partsPerBillion rdf:type owl:NamedIndividual ,
+                          <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

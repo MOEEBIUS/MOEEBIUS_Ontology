@@ -1,0 +1,19 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/moeebius/MOEEBIUSOntology-0.0.1> a prov:Entity;
+	 dc:title "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites.";
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-2033-859X>;
+	 dc:creator <https://orcid.org/0000-0002-2033-859X>;
+	 prov:wasAttributedTo <https://www.researchgate.net/profile/Georg_Schneider3>;
+	 dc:creator <https://www.researchgate.net/profile/Georg_Schneider3>;
+	 prov:wasAttributedTo <https://www.researchgate.net/profile/Haonan_Qiu2>;
+	 dc:creator <https://www.researchgate.net/profile/Haonan_Qiu2>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Georg Ferdinand Schneider".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Haonan Qiu".];
+	 prov:wasAttributedTo <https://www.researchgate.net/profile/Georgios_Kontes>;
+	 dc:contributor <https://www.researchgate.net/profile/Georgios_Kontes>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Georgios D. Kontes".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2018-04-06";
+.
