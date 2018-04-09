@@ -27,6 +27,7 @@ research and innovation programme under grant agreement No 680517 (MOEEBIUS)
 
 For this work, we used the free version of the Ontotext [GraphDB](https://ontotext.com/products/graphdb/).
 For this work, we used the free ontology editor [Protege](https://protege.stanford.edu/) (see also Musen (2015)).
+For the documentation of the ontologies we use the Widoco framework by Daniel Garijo Verdejo [Github](https://zenodo.org/badge/latestdoi/11427075) (Garijo (2017)).
 
 ## References
 
@@ -36,3 +37,5 @@ B. Balaji, A. Bhattacharya, G. Fierro, J. Gao, J. Gluck, D. Hong, A. Johansen, J
 H. Rijgersberg, M. Wigham, and J. Top. How semantics can improve engineering processes: A case of units of measure and quantities. Advanced Engineering Informatics, 25(2):276-287, 2011.
 
 M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003, 2015.
+
+Garijo, D. (2017). WIDOCO: a wizard for documenting ontologies. In International Semantic Web Conference (pp. 94-102). Springer, Cham.
