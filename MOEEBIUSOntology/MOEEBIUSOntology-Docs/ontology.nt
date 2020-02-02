@@ -1,0 +1,477 @@
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/moeebius/MOEEBIUSOntology-0.0.3> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#imports> <https://brickschema.org/schema/1.0.3/Brick> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/contributor> <https://www.researchgate.net/profile/Georgios_Kontes> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/contributor> "Georgios Kontes" .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Haonan_Qiu2> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/creator> "Haonan Qiu" .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/description> "The MOEEBIUS ontology extends the BRICK [1] and OM [2] ontologies to serve as a domain model for the MOEEBIUS demonstration sites.\r\n\r\nThis ontology is developed using the Protege tool [3].\r\n        \r\n[1] B. Balaji, A. Bhattacharya, G. Fierro, J. Gao, J. Gluck, D. Hong, A. Johansen, J. Koh,\r\nJ. Ploennigs, Y. Agarwal, M. Berges, D. Culler, R. K. Gupta, M. B. Kjaergaard, M. Srivastava, and K. Whitehouse. Brick : Metadata schema for portable smart building applications. Applied Energy, 2018.\r\n\r\n[2] H. Rijgersberg, M. Wigham, and J. Top. How semantics can improve engineering processes: A case of units of measure and quantities. Advanced Engineering Informatics, 25(2):276-287, 2011.\r\n\r\n[3] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003, 2015."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/identifier> "https://w3id.org/moeebius/MOEEBIUSOntology#" .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/issued> "2018-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/modified> "2018-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/rights> "Copyright (c) 2018, MOEEBIUS Consortium, Brussels, Belgium, EU. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/title> "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "moeebius" .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/moeebius/MOEEBIUSOntology#> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2000/01/rdf-schema#label> "MOEEBIUS Ontology"@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://brickschema.org> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.moeebius.eu> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.3" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#bepsID
+<https://w3id.org/moeebius/MOEEBIUSOntology#bepsID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#bepsID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID
+<https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://brickschema.org/schema/1.0.3/Brick#Point> .
+<https://brickschema.org/schema/1.0.3/Brick#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://brickschema.org/schema/1.0.3/Brick#Point> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy
+<https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a comment"@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "This is a label"@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#simulates
+<https://w3id.org/moeebius/MOEEBIUSOntology#simulates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel> "unit of measure"@en .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel> "unit of measurement"@en .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."@en .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> <http://www.w3.org/2000/01/rdf-schema#label> "unit"@en .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Air_Flow
+<https://brickschema.org/schema/1.0.3/Brick#Air_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#CO2_Level_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#CO2_Level_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter
+<https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Equipment
+<https://brickschema.org/schema/1.0.3/Brick#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Flow
+<https://brickschema.org/schema/1.0.3/Brick#Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#HVAC
+<https://brickschema.org/schema/1.0.3/Brick#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Setpoint
+<https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Setpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Location
+<https://brickschema.org/schema/1.0.3/Brick#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Meter
+<https://brickschema.org/schema/1.0.3/Brick#Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Occupancy_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Occupancy_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#On_Off_Command
+<https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Point
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Space_Heater
+<https://brickschema.org/schema/1.0.3/Brick#Space_Heater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Water_Flow
+<https://brickschema.org/schema/1.0.3/Brick#Water_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Zone_Humidity_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Zone_Humidity_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#On_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter
+<https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#CHP
+<https://w3id.org/moeebius/MOEEBIUSOntology#CHP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#CHP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#HVAC> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Chilled_Water_Flow
+<https://w3id.org/moeebius/MOEEBIUSOntology#Chilled_Water_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Chilled_Water_Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Water_Flow> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Dimming_Lighting_System_Luminance_Setpoint
+<https://w3id.org/moeebius/MOEEBIUSOntology#Dimming_Lighting_System_Luminance_Setpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Dimming_Lighting_System_Luminance_Setpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Setpoint> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#District_Heating
+<https://w3id.org/moeebius/MOEEBIUSOntology#District_Heating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#District_Heating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#HVAC> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Domestic_Hot_Water_Flow
+<https://w3id.org/moeebius/MOEEBIUSOntology#Domestic_Hot_Water_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Domestic_Hot_Water_Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Water_Flow> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Dwelling
+<https://w3id.org/moeebius/MOEEBIUSOntology#Dwelling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Dwelling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Location> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter
+<https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Off_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Off_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Off_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#FCU_On_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#FCU_On_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#FCU_On_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Water_Flow_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Water_Flow_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Water_Flow_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Fuel_Cell
+<https://w3id.org/moeebius/MOEEBIUSOntology#Fuel_Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Fuel_Cell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#CHP> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine
+<https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#CHP> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Hot_Water_Flow
+<https://w3id.org/moeebius/MOEEBIUSOntology#Hot_Water_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Hot_Water_Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Water_Flow> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_Off_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_Off_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_Off_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_On_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_On_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_On_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#On_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Equipment> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD> <http://www.w3.org/2000/01/rdf-schema#comment> "NOD is a device developed by Tyndall, UK. It can carry a number of sensors."@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_CO2_Level_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_CO2_Level_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_CO2_Level_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#CO2_Level_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Zone_Humidity_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Lighting_System_Luminance_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Lighting_System_Luminance_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Lighting_System_Luminance_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Occupancy_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Occupancy_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Occupancy_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Occupancy_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Proximity_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Proximity_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Proximity_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_TVOC_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_TVOC_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_TVOC_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Zone_Air_Temperature_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Zone_Air_Temperature_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Zone_Air_Temperature_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#On_Command
+<https://w3id.org/moeebius/MOEEBIUSOntology#On_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#On_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Radiator
+<https://w3id.org/moeebius/MOEEBIUSOntology#Radiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Radiator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Space_Heater> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow
+<https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Flow> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_System
+<https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Equipment> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Site
+<https://w3id.org/moeebius/MOEEBIUSOntology#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Site> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Location> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Supply_Air_Flow
+<https://w3id.org/moeebius/MOEEBIUSOntology#Supply_Air_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Supply_Air_Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Air_Flow> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Thermal_Energy_Meter
+<https://w3id.org/moeebius/MOEEBIUSOntology#Thermal_Energy_Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Thermal_Energy_Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Meter> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Total_Energy_Electricity_Energy_Meter
+<https://w3id.org/moeebius/MOEEBIUSOntology#Total_Energy_Electricity_Energy_Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Total_Energy_Electricity_Energy_Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Sensor> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#VRF
+<https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#HVAC> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#comment> "A Variable Refrigerant Unit is a piece of HVAC equipment which converts electricity into heat of cooling of a refrigerant. The refrigerant circulates from the system to terminal units in the respective HVAC zones."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Refrigerant Flow Unit"@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Variable_refrigerant_flow"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Angle
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Angle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Heat
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Heat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Heat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illuminance
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/MassFlow
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/MassFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Radiance
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Radiance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Radiance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Speed
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Speed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Speed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degree
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeFahrenheit
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeFahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeFahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kelvin
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilogramPerSecond-Time
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilogramPerSecond-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilogramPerSecond-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowattHour
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/second-Time
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/second-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/second-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# http://www.ontology-of-units-of-measure.org/vocabularies/om-2/wattPerSquareMetreSteradian
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/wattPerSquareMetreSteradian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/vocabularies/om-2/wattPerSquareMetreSteradian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#ActivePower
+<https://w3id.org/moeebius/MOEEBIUSOntology#ActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#ActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Cold
+<https://w3id.org/moeebius/MOEEBIUSOntology#Cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Cold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time
+<https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#kilogramPerHour-Time
+<https://w3id.org/moeebius/MOEEBIUSOntology#kilogramPerHour-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#kilogramPerHour-Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion
+<https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

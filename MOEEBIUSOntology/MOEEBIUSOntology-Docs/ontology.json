@@ -1,0 +1,577 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Angle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Heat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illuminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/MassFlow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Radiance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Speed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel" : [ {
+    "@language" : "en",
+    "@value" : "unit of measure"
+  }, {
+    "@language" : "en",
+    "@value" : "unit of measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "unit"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/alternativeLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeFahrenheit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kelvin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilogramPerSecond-Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowattHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/second-Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/wattPerSquareMetreSteradian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Air_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#CO2_Level_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Equipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#HVAC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Setpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Occupancy_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#On_Off_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Space_Heater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Humidity_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "https://www.researchgate.net/profile/Georgios_Kontes"
+  }, {
+    "@value" : "Georgios Kontes"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Haonan_Qiu2"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  }, {
+    "@value" : "Haonan Qiu"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The MOEEBIUS ontology extends the BRICK [1] and OM [2] ontologies to serve as a domain model for the MOEEBIUS demonstration sites.\r\n\r\nThis ontology is developed using the Protege tool [3].\r\n        \r\n[1] B. Balaji, A. Bhattacharya, G. Fierro, J. Gao, J. Gluck, D. Hong, A. Johansen, J. Koh,\r\nJ. Ploennigs, Y. Agarwal, M. Berges, D. Culler, R. K. Gupta, M. B. Kjaergaard, M. Srivastava, and K. Whitehouse. Brick : Metadata schema for portable smart building applications. Applied Energy, 2018.\r\n\r\n[2] H. Rijgersberg, M. Wigham, and J. Top. How semantics can improve engineering processes: A case of units of measure and quantities. Advanced Engineering Informatics, 25(2):276-287, 2011.\r\n\r\n[3] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003, 2015."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/moeebius/MOEEBIUSOntology#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-03-26"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-04-06"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2018, MOEEBIUS Consortium, Brussels, Belgium, EU. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "moeebius"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MOEEBIUS Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://brickschema.org"
+  }, {
+    "@id" : "http://www.moeebius.eu"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology-0.0.3"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.0.3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#On_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#ActivePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#CHP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#HVAC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Chilled_Water_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Cold",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity" ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Dimming_Lighting_System_Luminance_Setpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Setpoint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#District_Heating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#HVAC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Domestic_Hot_Water_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Dwelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Off_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#FCU_On_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Water_Flow_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Fuel_Cell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#CHP"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#CHP"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Hot_Water_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_Off_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_On_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#On_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "NOD is a device developed by Tyndall, UK. It can carry a number of sensors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Equipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_CO2_Level_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#CO2_Level_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Humidity_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Lighting_System_Luminance_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Occupancy_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Occupancy_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Proximity_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_TVOC_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Zone_Air_Temperature_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#On_Off_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#On_Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#On_Off_Command"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Radiator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Space_Heater"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Flow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Equipment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Site",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Supply_Air_Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Air_Flow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Thermal_Energy_Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Meter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Total_Energy_Electricity_Energy_Meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#VRF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Variable Refrigerant Unit is a piece of HVAC equipment which converts electricity into heat of cooling of a refrigerant. The refrigerant circulates from the system to terminal units in the respective HVAC zones."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Variable Refrigerant Flow Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://en.wikipedia.org/wiki/Variable_refrigerant_flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#HVAC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#bepsID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/identifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/identifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is a comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "This is a label"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#kilogramPerHour-Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit" ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#simulates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]
