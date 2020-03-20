@@ -7,7 +7,7 @@
       "en" : "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites."
     },
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "version" : "v0.0.3",
+    "version" : "v0.0.4",
     "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "Haonan Qiu", "https://orcid.org/0000-0002-2033-859X", "https://www.researchgate.net/profile/Haonan_Qiu2" ],
     "description" : {
       "en" : "The MOEEBIUS ontology extends the BRICK [1] and OM [2] ontologies to serve as a domain model for the MOEEBIUS demonstration sites.\r\n\r\nThis ontology is developed using the Protege tool [3].\r\n        \r\n[1] B. Balaji, A. Bhattacharya, G. Fierro, J. Gao, J. Gluck, D. Hong, A. Johansen, J. Koh,\r\nJ. Ploennigs, Y. Agarwal, M. Berges, D. Culler, R. K. Gupta, M. B. Kjaergaard, M. Srivastava, and K. Whitehouse. Brick : Metadata schema for portable smart building applications. Applied Energy, 2018.\r\n\r\n[2] H. Rijgersberg, M. Wigham, and J. Top. How semantics can improve engineering processes: A case of units of measure and quantities. Advanced Engineering Informatics, 25(2):276-287, 2011.\r\n\r\n[3] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003, 2015."
@@ -31,7 +31,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -46,7 +46,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -57,12 +57,18 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://www.researchgate.net/profile/Georgios_Kontes",
-        "type" : "iri"
+        "value" : "Georgios Kontes",
+        "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Georgios Kontes",
+        "value" : "https://www.researchgate.net/profile/Georgios_Kontes",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2018, MOEEBIUS Consortium, Brussels, Belgium, EU. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -71,16 +77,10 @@
         "value" : "moeebius",
         "type" : "label"
       } ],
-      "rights" : [ {
-        "identifier" : "rights",
-        "language" : "en",
-        "value" : "Copyright (c) 2018, MOEEBIUS Consortium, Brussels, Belgium, EU. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
-        "type" : "label"
-      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2018-04-06",
+        "value" : "2020-03-20",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -92,13 +92,7 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "v0.0.3",
-        "type" : "label"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites.",
+        "value" : "v0.0.4",
         "type" : "label"
       } ],
       "issued" : [ {
@@ -107,15 +101,21 @@
         "value" : "2018-03-26",
         "type" : "label"
       } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites.",
+        "type" : "label"
+      } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.moeebius.eu",
+        "value" : "http://brickschema.org",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://brickschema.org",
+        "value" : "http://www.moeebius.eu",
         "type" : "iri"
       } ]
     }
@@ -131,13 +131,13 @@
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
     "id" : "37",
@@ -146,163 +146,205 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "58",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "74",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "54",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "92",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "85",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "91",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "90",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
+    "id" : "53",
     "type" : "owl:Class"
   }, {
     "id" : "44",
     "type" : "owl:Class"
   }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
     "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -316,24 +358,24 @@
     "attributes" : [ "external" ],
     "id" : "3"
   }, {
-    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine",
-    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Gas_Engine"
-    },
-    "id" : "5",
-    "superClasses" : [ "6" ]
-  }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Meter",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Meter"
     },
-    "subClasses" : [ "8" ],
+    "subClasses" : [ "6" ],
     "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Gas_Engine",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gas_Engine"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Dimming_Lighting_System_Luminance_Setpoint",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -341,8 +383,8 @@
     "label" : {
       "IRI-based" : "Dimming_Lighting_System_Luminance_Setpoint"
     },
-    "id" : "19",
-    "superClasses" : [ "20" ]
+    "id" : "17",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Supply_Air_Flow",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -350,8 +392,8 @@
     "label" : {
       "IRI-based" : "Supply_Air_Flow"
     },
-    "id" : "31",
-    "superClasses" : [ "32" ]
+    "id" : "15",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -359,9 +401,9 @@
     "label" : {
       "IRI-based" : "PIR_Sensor"
     },
-    "subClasses" : [ "35" ],
+    "subClasses" : [ "33" ],
     "attributes" : [ "external" ],
-    "id" : "34"
+    "id" : "32"
   }, {
     "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Quantity",
     "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
@@ -443,8 +485,8 @@
     "label" : {
       "IRI-based" : "Hot_Water_Flow"
     },
-    "id" : "15",
-    "superClasses" : [ "16" ]
+    "id" : "40",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Off_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -452,9 +494,9 @@
     "label" : {
       "IRI-based" : "Off_Command"
     },
-    "subClasses" : [ "45", "46" ],
-    "id" : "43",
-    "superClasses" : [ "44" ]
+    "subClasses" : [ "47", "48" ],
+    "id" : "45",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_System",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -462,8 +504,8 @@
     "label" : {
       "IRI-based" : "Refrigerant_System"
     },
-    "id" : "47",
-    "superClasses" : [ "48" ]
+    "id" : "49",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Humidity_Sensor",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -471,9 +513,9 @@
     "label" : {
       "IRI-based" : "Zone_Humidity_Sensor"
     },
-    "subClasses" : [ "52" ],
+    "subClasses" : [ "54" ],
     "attributes" : [ "external" ],
-    "id" : "51"
+    "id" : "53"
   }, {
     "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit",
     "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
@@ -514,16 +556,16 @@
         "IRI-based" : "second-Time"
       }
     }, {
-      "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time",
-      "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-      "labels" : {
-        "IRI-based" : "cubicMetrePerHour-Time"
-      }
-    }, {
       "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilogramPerSecond-Time",
       "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
       "labels" : {
         "IRI-based" : "kilogramPerSecond-Time"
+      }
+    }, {
+      "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#cubicMetrePerHour-Time",
+      "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+      "labels" : {
+        "IRI-based" : "cubicMetrePerHour-Time"
       }
     }, {
       "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion",
@@ -574,16 +616,16 @@
         "IRI-based" : "RelativeHumidity"
       }
     }, {
-      "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux",
-      "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
-      "labels" : {
-        "IRI-based" : "lux"
-      }
-    }, {
       "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetrePerSecond-Time",
       "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
       "labels" : {
         "IRI-based" : "cubicMetrePerSecond-Time"
+      }
+    }, {
+      "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux",
+      "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
+      "labels" : {
+        "IRI-based" : "lux"
       }
     }, {
       "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilowatt",
@@ -592,16 +634,16 @@
         "IRI-based" : "kilowatt"
       }
     }, {
-      "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour",
-      "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
-      "labels" : {
-        "IRI-based" : "hour"
-      }
-    }, {
       "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/cubicMetre",
       "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
       "labels" : {
         "IRI-based" : "cubicMetre"
+      }
+    }, {
+      "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/hour",
+      "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
+      "labels" : {
+        "IRI-based" : "hour"
       }
     }, {
       "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/joule",
@@ -610,12 +652,34 @@
         "IRI-based" : "joule"
       }
     } ],
-    "subClasses" : [ "54" ],
+    "subClasses" : [ "58" ],
     "comment" : {
       "en" : "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."
     },
     "attributes" : [ "external" ],
-    "id" : "42"
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rain_Precipitation_Sensor"
+    },
+    "comment" : {
+      "en" : "Rain Precipitation Sensor"
+    },
+    "id" : "60",
+    "superClasses" : [ "61", "2" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Rain_Sensor"
+    },
+    "subClasses" : [ "60" ],
+    "attributes" : [ "external" ],
+    "id" : "61"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Off_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -623,8 +687,8 @@
     "label" : {
       "IRI-based" : "FCU_Off_Command"
     },
-    "id" : "58",
-    "superClasses" : [ "45" ]
+    "id" : "62",
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Flow",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -632,9 +696,9 @@
     "label" : {
       "IRI-based" : "Flow"
     },
-    "subClasses" : [ "62" ],
+    "subClasses" : [ "56" ],
     "attributes" : [ "external" ],
-    "id" : "63"
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -642,8 +706,18 @@
     "label" : {
       "IRI-based" : "Refrigerant_Flow"
     },
-    "id" : "62",
-    "superClasses" : [ "63" ]
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Wind_Speed_Sensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Proximity_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -651,8 +725,8 @@
     "label" : {
       "IRI-based" : "NOD_Proximity_Sensor"
     },
-    "id" : "35",
-    "superClasses" : [ "34" ]
+    "id" : "33",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#FCU_Water_Flow_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -660,8 +734,8 @@
     "label" : {
       "IRI-based" : "FCU_Water_Flow_Sensor"
     },
-    "id" : "56",
-    "superClasses" : [ "57" ]
+    "id" : "24",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -669,18 +743,19 @@
     "label" : {
       "IRI-based" : "Water_Flow_Sensor"
     },
-    "subClasses" : [ "56" ],
+    "subClasses" : [ "24" ],
     "attributes" : [ "external" ],
-    "id" : "57"
+    "id" : "25"
   }, {
-    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor",
-    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "NOD_Humidity_Sensor"
+      "IRI-based" : "Weather_Solar_Radiance_Sensor"
     },
-    "id" : "52",
-    "superClasses" : [ "51" ]
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Air_Flow",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -688,9 +763,18 @@
     "label" : {
       "IRI-based" : "Air_Flow"
     },
-    "subClasses" : [ "31" ],
+    "subClasses" : [ "15" ],
     "attributes" : [ "external" ],
-    "id" : "32"
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Humidity_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NOD_Humidity_Sensor"
+    },
+    "id" : "54",
+    "superClasses" : [ "53" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#VRF",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -710,8 +794,21 @@
     "comment" : {
       "en" : "A Variable Refrigerant Unit is a piece of HVAC equipment which converts electricity into heat of cooling of a refrigerant. The refrigerant circulates from the system to terminal units in the respective HVAC zones."
     },
-    "id" : "73",
-    "superClasses" : [ "74" ]
+    "id" : "79",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_UV_Sensor",
+      "en" : "Weather UV Sensor"
+    },
+    "comment" : {
+      "en" : "UV index provided by weather station or service."
+    },
+    "id" : "89",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Electricity_Meter",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -719,9 +816,9 @@
     "label" : {
       "IRI-based" : "Electricity_Meter"
     },
-    "subClasses" : [ "13", "10" ],
+    "subClasses" : [ "99", "92" ],
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "98"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_Off_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -729,8 +826,8 @@
     "label" : {
       "IRI-based" : "Lighting_Off_Command"
     },
-    "id" : "46",
-    "superClasses" : [ "43" ]
+    "id" : "48",
+    "superClasses" : [ "45" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Lighting_System_Luminance_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -738,8 +835,8 @@
     "label" : {
       "IRI-based" : "NOD_Lighting_System_Luminance_Sensor"
     },
-    "id" : "75",
-    "superClasses" : [ "76" ]
+    "id" : "85",
+    "superClasses" : [ "86" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Setpoint",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -747,9 +844,9 @@
     "label" : {
       "IRI-based" : "Lighting_System_Luminance_Setpoint"
     },
-    "subClasses" : [ "19" ],
+    "subClasses" : [ "17" ],
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Dwelling",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -757,8 +854,8 @@
     "label" : {
       "IRI-based" : "Dwelling"
     },
-    "id" : "66",
-    "superClasses" : [ "67" ]
+    "id" : "68",
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#HVAC",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -766,9 +863,9 @@
     "label" : {
       "IRI-based" : "HVAC"
     },
-    "subClasses" : [ "91", "73", "6" ],
+    "subClasses" : [ "118", "79", "8" ],
     "attributes" : [ "external" ],
-    "id" : "74"
+    "id" : "80"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Thermal_Energy_Meter",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -776,8 +873,31 @@
     "label" : {
       "IRI-based" : "Thermal_Energy_Meter"
     },
-    "id" : "8",
-    "superClasses" : [ "7" ]
+    "id" : "6",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Outside_Air_Dewpoint_Temperature_Sensor",
+      "en" : "Outside Air Dewpoint Temperature Sensor"
+    },
+    "comment" : {
+      "en" : "Dewpoint temperature sensor of the outside air."
+    },
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Wind_Direction_Sensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#VOC_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -785,9 +905,22 @@
     "label" : {
       "IRI-based" : "VOC_Sensor"
     },
-    "subClasses" : [ "92" ],
-    "id" : "89",
-    "superClasses" : [ "90" ]
+    "subClasses" : [ "119" ],
+    "id" : "97",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Snow_Depth_Sensor",
+      "en" : "Weather Snow Depth Sensor"
+    },
+    "comment" : {
+      "en" : "Snow depth measured at sight typically provided by weather station or weather service in millimetre."
+    },
+    "id" : "117",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Location",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -795,9 +928,9 @@
     "label" : {
       "IRI-based" : "Location"
     },
-    "subClasses" : [ "93", "66" ],
+    "subClasses" : [ "120", "68" ],
     "attributes" : [ "external" ],
-    "id" : "67"
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Occupancy_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -808,15 +941,25 @@
     "id" : "4",
     "superClasses" : [ "3" ]
   }, {
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Relative_Humidity_Sensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "AC_Off_Command"
     },
-    "subClasses" : [ "58" ],
-    "id" : "45",
-    "superClasses" : [ "43" ]
+    "subClasses" : [ "62" ],
+    "id" : "47",
+    "superClasses" : [ "45" ]
   }, {
     "iri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2/SingularUnit",
     "baseIri" : "http://www.ontology-of-units-of-measure.org/vocabularies/om-2",
@@ -833,8 +976,8 @@
       "IRI-based" : "SingularUnit"
     },
     "attributes" : [ "external" ],
-    "id" : "54",
-    "superClasses" : [ "42" ]
+    "id" : "58",
+    "superClasses" : [ "44" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_CO2_Level_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -845,15 +988,38 @@
     "id" : "39",
     "superClasses" : [ "38" ]
   }, {
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Outside_Air_Dewpoint_Sensor"
+    },
+    "subClasses" : [ "51" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Equipment",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Equipment"
     },
-    "subClasses" : [ "47", "50" ],
+    "subClasses" : [ "49", "27" ],
     "attributes" : [ "external" ],
-    "id" : "48"
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Visibility_Sensor",
+      "en" : "Weather Visibility Sensor"
+    },
+    "comment" : {
+      "en" : "Visibility depened on cloudiness typically provided by a weather service."
+    },
+    "id" : "114",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_Zone_Air_Temperature_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -861,8 +1027,8 @@
     "label" : {
       "IRI-based" : "NOD_Zone_Air_Temperature_Sensor"
     },
-    "id" : "1",
-    "superClasses" : [ "2" ]
+    "id" : "101",
+    "superClasses" : [ "102" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD_TVOC_Sensor",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -870,8 +1036,8 @@
     "label" : {
       "IRI-based" : "NOD_TVOC_Sensor"
     },
-    "id" : "92",
-    "superClasses" : [ "89" ]
+    "id" : "119",
+    "superClasses" : [ "97" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Domestic_Hot_Water_Flow",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -879,8 +1045,8 @@
     "label" : {
       "IRI-based" : "Domestic_Hot_Water_Flow"
     },
-    "id" : "22",
-    "superClasses" : [ "16" ]
+    "id" : "109",
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#NOD",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -891,8 +1057,8 @@
     "comment" : {
       "en" : "NOD is a device developed by Tyndall, UK. It can carry a number of sensors."
     },
-    "id" : "50",
-    "superClasses" : [ "48" ]
+    "id" : "27",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Total_Energy_Electricity_Energy_Meter",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -900,8 +1066,8 @@
     "label" : {
       "IRI-based" : "Total_Energy_Electricity_Energy_Meter"
     },
-    "id" : "85",
-    "superClasses" : [ "10" ]
+    "id" : "91",
+    "superClasses" : [ "92" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Space_Heater",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -909,9 +1075,9 @@
     "label" : {
       "IRI-based" : "Space_Heater"
     },
-    "subClasses" : [ "29" ],
+    "subClasses" : [ "35" ],
     "attributes" : [ "external" ],
-    "id" : "30"
+    "id" : "36"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_On_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -919,26 +1085,16 @@
     "label" : {
       "IRI-based" : "AC_On_Command"
     },
-    "subClasses" : [ "26" ],
-    "id" : "27",
-    "superClasses" : [ "81" ]
+    "subClasses" : [ "30" ],
+    "id" : "31",
+    "superClasses" : [ "76" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "69",
+    "id" : "71",
     "label" : {
       "undefined" : "Thing"
     }
-  }, {
-    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#CHP",
-    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CHP"
-    },
-    "subClasses" : [ "5", "18" ],
-    "id" : "6",
-    "superClasses" : [ "74" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#FCU_On_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -946,8 +1102,29 @@
     "label" : {
       "IRI-based" : "FCU_On_Command"
     },
-    "id" : "26",
-    "superClasses" : [ "27" ]
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#CHP",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHP"
+    },
+    "subClasses" : [ "7", "22" ],
+    "id" : "8",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Sensor",
+      "en" : "Weather Sensor"
+    },
+    "subClasses" : [ "20", "12", "10", "1", "114", "60", "117", "89", "73" ],
+    "id" : "2",
+    "superClasses" : [ "95" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Point",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -956,7 +1133,7 @@
       "IRI-based" : "Point"
     },
     "attributes" : [ "external" ],
-    "id" : "41"
+    "id" : "43"
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -964,9 +1141,9 @@
     "label" : {
       "IRI-based" : "Water_Flow"
     },
-    "subClasses" : [ "15", "24", "22" ],
+    "subClasses" : [ "40", "111", "109" ],
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "41"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#District_Heating",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -974,8 +1151,8 @@
     "label" : {
       "IRI-based" : "District_Heating"
     },
-    "id" : "91",
-    "superClasses" : [ "74" ]
+    "id" : "118",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -983,9 +1160,9 @@
     "label" : {
       "IRI-based" : "Zone_Air_Temperature_Sensor"
     },
-    "subClasses" : [ "1" ],
+    "subClasses" : [ "101" ],
     "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "102"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Site",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -993,8 +1170,8 @@
     "label" : {
       "IRI-based" : "Site"
     },
-    "id" : "93",
-    "superClasses" : [ "67" ]
+    "id" : "120",
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Radiator",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1002,8 +1179,8 @@
     "label" : {
       "IRI-based" : "Radiator"
     },
-    "id" : "29",
-    "superClasses" : [ "30" ]
+    "id" : "35",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Electricity_Energy_Meter",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1011,9 +1188,9 @@
     "label" : {
       "IRI-based" : "Electricity_Energy_Meter"
     },
-    "subClasses" : [ "85" ],
-    "id" : "10",
-    "superClasses" : [ "11" ]
+    "subClasses" : [ "91" ],
+    "id" : "92",
+    "superClasses" : [ "98" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Sensor",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -1021,9 +1198,19 @@
     "label" : {
       "IRI-based" : "Sensor"
     },
-    "subClasses" : [ "89" ],
+    "subClasses" : [ "97", "2" ],
     "attributes" : [ "external" ],
-    "id" : "90"
+    "id" : "95"
+  }, {
+    "iri" : "https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor",
+    "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pressure_Sensor"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "83"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Fuel_Cell",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1031,17 +1218,8 @@
     "label" : {
       "IRI-based" : "Fuel_Cell"
     },
-    "id" : "18",
-    "superClasses" : [ "6" ]
-  }, {
-    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter",
-    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Active_Electrical_Power_Meter"
-    },
-    "id" : "13",
-    "superClasses" : [ "11" ]
+    "id" : "22",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#On_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1049,9 +1227,18 @@
     "label" : {
       "IRI-based" : "On_Command"
     },
-    "subClasses" : [ "27", "80" ],
-    "id" : "81",
-    "superClasses" : [ "44" ]
+    "subClasses" : [ "31", "88" ],
+    "id" : "76",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Active_Electrical_Power_Meter",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Active_Electrical_Power_Meter"
+    },
+    "id" : "99",
+    "superClasses" : [ "98" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#Lighting_System_Luminance_Sensor",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -1059,9 +1246,22 @@
     "label" : {
       "IRI-based" : "Lighting_System_Luminance_Sensor"
     },
-    "subClasses" : [ "75" ],
+    "subClasses" : [ "85" ],
     "attributes" : [ "external" ],
-    "id" : "76"
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor",
+    "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weather_Air_Pressure_Sensor",
+      "en" : "Weather Air Pressure Sensor"
+    },
+    "comment" : {
+      "en" : "Outside air pressure provided by weather station or service. Typically measured in milli Bar."
+    },
+    "id" : "1",
+    "superClasses" : [ "2", "83" ]
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Lighting_On_Command",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1069,8 +1269,8 @@
     "label" : {
       "IRI-based" : "Lighting_On_Command"
     },
-    "id" : "80",
-    "superClasses" : [ "81" ]
+    "id" : "88",
+    "superClasses" : [ "76" ]
   }, {
     "iri" : "https://brickschema.org/schema/1.0.3/Brick#On_Off_Command",
     "baseIri" : "https://brickschema.org/schema/1.0.3/Brick",
@@ -1078,9 +1278,9 @@
     "label" : {
       "IRI-based" : "On_Off_Command"
     },
-    "subClasses" : [ "81", "43" ],
+    "subClasses" : [ "76", "45" ],
     "attributes" : [ "external" ],
-    "id" : "44"
+    "id" : "46"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#Chilled_Water_Flow",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1088,8 +1288,8 @@
     "label" : {
       "IRI-based" : "Chilled_Water_Flow"
     },
-    "id" : "24",
-    "superClasses" : [ "16" ]
+    "id" : "111",
+    "superClasses" : [ "41" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -1098,13 +1298,16 @@
     "id" : "9",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "12",
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "14",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "17",
+    "id" : "19",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "21",
@@ -1113,25 +1316,19 @@
     "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "25",
+    "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "28",
+    "id" : "29",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "33",
+    "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "36",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "40",
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "53",
+    "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "55",
@@ -1140,10 +1337,7 @@
     "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "61",
+    "id" : "63",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "64",
@@ -1152,70 +1346,115 @@
     "id" : "65",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "68",
-    "type" : "owl:objectProperty"
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "70",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "72",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "79",
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "83",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "84",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "86",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "87",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "88",
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "94",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "95",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "96",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "97",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "98",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "99",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "100",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "101",
+    "id" : "103",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "102",
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -1224,139 +1463,199 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
-    "range" : "11",
+    "range" : "2",
     "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
-    "range" : "11",
-    "domain" : "13",
+    "range" : "2",
+    "domain" : "12",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "12"
+    "id" : "11"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
   }, {
     "range" : "16",
     "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
-    "range" : "6",
-    "domain" : "18",
+    "range" : "2",
+    "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "17"
+    "id" : "19"
   }, {
-    "range" : "16",
+    "range" : "8",
     "domain" : "22",
     "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
-    "range" : "16",
+    "range" : "25",
     "domain" : "24",
     "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
-    "range" : "27",
-    "domain" : "26",
+    "range" : "28",
+    "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "25"
+    "id" : "26"
   }, {
-    "range" : "30",
-    "domain" : "29",
+    "range" : "31",
+    "domain" : "30",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
+    "id" : "29"
   }, {
-    "range" : "6",
-    "domain" : "5",
+    "range" : "36",
+    "domain" : "35",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "32",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "36"
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "range" : "42",
+    "range" : "44",
     "label" : {
       "IRI-based" : "hasUnit"
     },
-    "domain" : "41",
+    "domain" : "43",
     "attributes" : [ "object", "functional" ],
-    "id" : "40"
+    "id" : "42"
   }, {
-    "range" : "48",
-    "domain" : "50",
+    "range" : "52",
+    "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "48",
-    "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
+    "id" : "50"
   }, {
     "range" : "57",
     "domain" : "56",
     "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
-    "range" : "51",
-    "domain" : "52",
+    "range" : "28",
+    "domain" : "49",
     "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
-    "range" : "45",
-    "domain" : "58",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "63",
+    "range" : "47",
     "domain" : "62",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "61"
+    "id" : "63"
   }, {
-    "range" : "42",
+    "range" : "53",
     "domain" : "54",
     "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
-    "range" : "67",
-    "domain" : "66",
+    "range" : "61",
+    "domain" : "60",
     "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
+    "range" : "44",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "69",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#simulates",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "range" : "69",
+    "range" : "71",
     "label" : {
       "IRI-based" : "simulates"
     },
-    "domain" : "69",
+    "domain" : "71",
     "attributes" : [ "object" ],
-    "id" : "68"
-  }, {
-    "range" : "43",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
-    "range" : "43",
+    "range" : "45",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "45",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "46",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "46",
     "domain" : "45",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "71"
+    "id" : "77"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#isSimulatedBy",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
-    "range" : "69",
+    "range" : "71",
     "label" : {
       "IRI-based" : "isSimulatedBy",
       "en" : "This is a label"
     },
-    "domain" : "69",
+    "domain" : "71",
     "comment" : {
       "en" : "This is a comment"
     },
     "attributes" : [ "object" ],
-    "id" : "72"
+    "id" : "78"
+  }, {
+    "range" : "76",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "83",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "86",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "76",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "92",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "95",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "95",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "102",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "98",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
   }, {
     "iri" : "https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity",
     "baseIri" : "https://w3id.org/moeebius/MOEEBIUSOntology",
@@ -1364,93 +1663,98 @@
     "label" : {
       "IRI-based" : "hasQuantity"
     },
-    "domain" : "41",
-    "attributes" : [ "object" ],
-    "id" : "77"
-  }, {
-    "range" : "76",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
-  }, {
-    "range" : "81",
-    "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
-  }, {
-    "range" : "44",
     "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "82"
+    "attributes" : [ "object" ],
+    "id" : "104"
   }, {
-    "range" : "44",
-    "domain" : "81",
+    "range" : "98",
+    "domain" : "99",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "83"
+    "id" : "105"
   }, {
-    "range" : "10",
-    "domain" : "85",
+    "range" : "41",
+    "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "84"
+    "id" : "106"
   }, {
-    "range" : "20",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
-  }, {
-    "range" : "81",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "87"
-  }, {
-    "range" : "90",
-    "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "88"
-  }, {
-    "range" : "74",
+    "range" : "2",
     "domain" : "73",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "94"
+    "id" : "107"
   }, {
-    "range" : "74",
-    "domain" : "6",
+    "range" : "41",
+    "domain" : "109",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "95"
+    "id" : "108"
+  }, {
+    "range" : "41",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "2",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "2",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "2",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "2",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "80",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "80",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
   }, {
     "range" : "3",
     "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "96"
+    "id" : "123"
   }, {
-    "range" : "7",
-    "domain" : "8",
+    "range" : "5",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "97"
+    "id" : "124"
   }, {
-    "range" : "34",
-    "domain" : "35",
+    "range" : "32",
+    "domain" : "33",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "98"
+    "id" : "125"
   }, {
     "range" : "38",
     "domain" : "39",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
+    "id" : "126"
   }, {
-    "range" : "89",
-    "domain" : "92",
+    "range" : "97",
+    "domain" : "119",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "100"
+    "id" : "127"
   }, {
-    "range" : "67",
-    "domain" : "93",
+    "range" : "69",
+    "domain" : "120",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "101"
+    "id" : "128"
   }, {
-    "range" : "74",
-    "domain" : "91",
+    "range" : "80",
+    "domain" : "118",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "102"
+    "id" : "129"
   } ]
 }

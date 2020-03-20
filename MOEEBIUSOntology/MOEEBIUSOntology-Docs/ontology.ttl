@@ -7,7 +7,7 @@
 @base <https://w3id.org/moeebius/MOEEBIUSOntology> .
 
 <https://w3id.org/moeebius/MOEEBIUSOntology> rdf:type owl:Ontology ;
-                                              owl:versionIRI <https://w3id.org/moeebius/MOEEBIUSOntology-0.0.3> ;
+                                              owl:versionIRI <https://w3id.org/moeebius/MOEEBIUSOntology-0.0.4> ;
                                               owl:imports <https://brickschema.org/schema/1.0.3/Brick> ;
                                               <http://purl.org/dc/terms/contributor> <https://www.researchgate.net/profile/Georgios_Kontes> ,
                                                                                      "Georgios Kontes" ;
@@ -29,7 +29,7 @@ J. Ploennigs, Y. Agarwal, M. Berges, D. Culler, R. K. Gupta, M. B. Kjaergaard, M
                                               <http://purl.org/dc/terms/identifier> "https://w3id.org/moeebius/MOEEBIUSOntology#" ;
                                               <http://purl.org/dc/terms/issued> "2018-03-26"^^xsd:date ;
                                               <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
-                                              <http://purl.org/dc/terms/modified> "2018-04-06"^^xsd:date ;
+                                              <http://purl.org/dc/terms/modified> "2020-03-20"^^xsd:date ;
                                               <http://purl.org/dc/terms/rights> "Copyright (c) 2018, MOEEBIUS Consortium, Brussels, Belgium, EU. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en ;
                                               <http://purl.org/dc/terms/title> "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites."@en ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "moeebius" ;
@@ -37,7 +37,7 @@ J. Ploennigs, Y. Agarwal, M. Berges, D. Culler, R. K. Gupta, M. B. Kjaergaard, M
                                               rdfs:label "MOEEBIUS Ontology"@en ;
                                               rdfs:seeAlso <http://brickschema.org> ,
                                                            <http://www.moeebius.eu> ;
-                                              owl:versionInfo "v0.0.3" .
+                                              owl:versionInfo "v0.0.4" .
 
 #################################################################
 #    Annotation properties
@@ -210,12 +210,20 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 <https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> rdf:type owl:Class .
 
 
+###  https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor> rdf:type owl:Class .
+
+
 ###  https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor
 <https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor> rdf:type owl:Class .
 
 
 ###  https://brickschema.org/schema/1.0.3/Brick#Point
 <https://brickschema.org/schema/1.0.3/Brick#Point> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor> rdf:type owl:Class .
 
 
 ###  https://brickschema.org/schema/1.0.3/Brick#Sensor
@@ -232,6 +240,30 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 ###  https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor
 <https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor> rdf:type owl:Class .
+
+
+###  https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :Weather_Sensor .
+
+
+###  https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :Weather_Sensor .
+
+
+###  https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :Weather_Sensor .
+
+
+###  https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :Weather_Sensor .
 
 
 ###  https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor
@@ -383,9 +415,24 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
             rdfs:subClassOf <https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> .
 
 
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor
+:Outside_Air_Dewpoint_Temperature_Sensor rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor> ;
+                                         rdfs:comment "Dewpoint temperature sensor of the outside air."@en ;
+                                         rdfs:label "Outside Air Dewpoint Temperature Sensor"@en .
+
+
 ###  https://w3id.org/moeebius/MOEEBIUSOntology#Radiator
 :Radiator rdf:type owl:Class ;
           rdfs:subClassOf <https://brickschema.org/schema/1.0.3/Brick#Space_Heater> .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor
+:Rain_Precipitation_Sensor rdf:type owl:Class ;
+                           rdfs:subClassOf <https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor> ,
+                                           :Weather_Sensor ;
+                           rdfs:comment "Rain Precipitation Sensor"@en ,
+                                        "Sensor which measures the amount of precipitation collected, typically measured in a length unit such as millimetre."@en .
 
 
 ###  https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow
@@ -429,6 +476,41 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
      rdfs:comment "A Variable Refrigerant Unit is a piece of HVAC equipment which converts electricity into heat of cooling of a refrigerant. The refrigerant circulates from the system to terminal units in the respective HVAC zones."@en ;
      rdfs:label "Variable Refrigerant Flow Unit"@en ;
      rdfs:seeAlso "https://en.wikipedia.org/wiki/Variable_refrigerant_flow"@en .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor
+:Weather_Air_Pressure_Sensor rdf:type owl:Class ;
+                             rdfs:subClassOf <https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor> ,
+                                             :Weather_Sensor ;
+                             rdfs:comment "Outside air pressure provided by weather station or service. Typically measured in milli Bar."@en ;
+                             rdfs:label "Weather Air Pressure Sensor"@en .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor
+:Weather_Sensor rdf:type owl:Class ;
+                rdfs:subClassOf <https://brickschema.org/schema/1.0.3/Brick#Sensor> ;
+                rdfs:label "Weather Sensor"@en .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor
+:Weather_Snow_Depth_Sensor rdf:type owl:Class ;
+                           rdfs:subClassOf :Weather_Sensor ;
+                           rdfs:comment "Snow depth measured at sight typically provided by weather station or weather service in millimetre."@en ;
+                           rdfs:label "Weather Snow Depth Sensor"@en .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor
+:Weather_UV_Sensor rdf:type owl:Class ;
+                   rdfs:subClassOf :Weather_Sensor ;
+                   rdfs:comment "UV index provided by weather station or service."@en ;
+                   rdfs:label "Weather UV Sensor"@en .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor
+:Weather_Visibility_Sensor rdf:type owl:Class ;
+                           rdfs:subClassOf :Weather_Sensor ;
+                           rdfs:comment "Visibility depened on cloudiness typically provided by a weather service."@en ;
+                           rdfs:label "Weather Visibility Sensor"@en .
 
 
 #################################################################
@@ -583,4 +665,4 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
                           <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

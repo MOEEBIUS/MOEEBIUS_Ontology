@@ -185,10 +185,16 @@
   "@id" : "https://brickschema.org/schema/1.0.3/Brick#On_Off_Command",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://brickschema.org/schema/1.0.3/Brick#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://brickschema.org/schema/1.0.3/Brick#Sensor",
@@ -202,6 +208,33 @@
 }, {
   "@id" : "https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
+}, {
+  "@id" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
 }, {
   "@id" : "https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -243,7 +276,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2018-04-06"
+    "@value" : "2020-03-20"
   } ],
   "http://purl.org/dc/terms/rights" : [ {
     "@language" : "en",
@@ -272,10 +305,10 @@
     "@id" : "https://brickschema.org/schema/1.0.3/Brick"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology-0.0.3"
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology-0.0.4"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v0.0.3"
+    "@value" : "v0.0.4"
   } ]
 }, {
   "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#AC_Off_Command",
@@ -456,10 +489,39 @@
     "@id" : "https://brickschema.org/schema/1.0.3/Brick#On_Off_Command"
   } ]
 }, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dewpoint temperature sensor of the outside air."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outside Air Dewpoint Temperature Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor"
+  } ]
+}, {
   "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Radiator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://brickschema.org/schema/1.0.3/Brick#Space_Heater"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rain Precipitation Sensor"
+  }, {
+    "@language" : "en",
+    "@value" : "Sensor which measures the amount of precipitation collected, typically measured in a length unit such as millimetre."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor"
+  }, {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
   } ]
 }, {
   "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow",
@@ -520,6 +582,74 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://brickschema.org/schema/1.0.3/Brick#HVAC"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Outside air pressure provided by weather station or service. Typically measured in milli Bar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather Air Pressure Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor"
+  }, {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://brickschema.org/schema/1.0.3/Brick#Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Snow depth measured at sight typically provided by weather station or weather service in millimetre."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather Snow Depth Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "UV index provided by weather station or service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather UV Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Visibility depened on cloudiness typically provided by a weather service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather Visibility Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor"
   } ]
 }, {
   "@id" : "https://w3id.org/moeebius/MOEEBIUSOntology#bepsID",

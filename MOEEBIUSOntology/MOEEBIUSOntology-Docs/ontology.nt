@@ -1,5 +1,5 @@
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/moeebius/MOEEBIUSOntology-0.0.3> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/moeebius/MOEEBIUSOntology-0.0.4> .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#imports> <https://brickschema.org/schema/1.0.3/Brick> .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/contributor> <https://www.researchgate.net/profile/Georgios_Kontes> .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/contributor> "Georgios Kontes" .
@@ -12,7 +12,7 @@
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/identifier> "https://w3id.org/moeebius/MOEEBIUSOntology#" .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/issued> "2018-03-26"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
-<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/modified> "2018-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/modified> "2020-03-20"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/rights> "Copyright (c) 2018, MOEEBIUS Consortium, Brussels, Belgium, EU. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/dc/terms/title> "MOEEBIUS - An ontology for the MOEEBIUS demonstration sites."@en .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "moeebius" .
@@ -20,7 +20,7 @@
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2000/01/rdf-schema#label> "MOEEBIUS Ontology"@en .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://brickschema.org> .
 <https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.moeebius.eu> .
-<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.3" .
+<https://w3id.org/moeebius/MOEEBIUSOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.4" .
 # 
 # 
 # #################################################################
@@ -172,10 +172,16 @@
 # https://brickschema.org/schema/1.0.3/Brick#On_Off_Command
 <https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor
 <https://brickschema.org/schema/1.0.3/Brick#PIR_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://brickschema.org/schema/1.0.3/Brick#Point
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://brickschema.org/schema/1.0.3/Brick#Sensor
 <https://brickschema.org/schema/1.0.3/Brick#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -188,6 +194,25 @@
 # 
 # https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor
 <https://brickschema.org/schema/1.0.3/Brick#Water_Flow_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Relative_Humidity_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Solar_Radiance_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Direction_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+# 
+# https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://brickschema.org/schema/1.0.3/Brick#Weather_Wind_Speed_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
 # 
 # https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor
 <https://brickschema.org/schema/1.0.3/Brick#Zone_Air_Temperature_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -308,9 +333,22 @@
 <https://w3id.org/moeebius/MOEEBIUSOntology#On_Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/moeebius/MOEEBIUSOntology#On_Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#On_Off_Command> .
 # 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Outside_Air_Dewpoint_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Dewpoint temperature sensor of the outside air."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Outside_Air_Dewpoint_Temperature_Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Outside Air Dewpoint Temperature Sensor"@en .
+# 
 # https://w3id.org/moeebius/MOEEBIUSOntology#Radiator
 <https://w3id.org/moeebius/MOEEBIUSOntology#Radiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/moeebius/MOEEBIUSOntology#Radiator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Space_Heater> .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Weather_Rain_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Rain Precipitation Sensor"@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Rain_Precipitation_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensor which measures the amount of precipitation collected, typically measured in a length unit such as millimetre."@en .
 # 
 # https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow
 <https://w3id.org/moeebius/MOEEBIUSOntology#Refrigerant_Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -346,6 +384,36 @@
 <https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#comment> "A Variable Refrigerant Unit is a piece of HVAC equipment which converts electricity into heat of cooling of a refrigerant. The refrigerant circulates from the system to terminal units in the respective HVAC zones."@en .
 <https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Refrigerant Flow Unit"@en .
 <https://w3id.org/moeebius/MOEEBIUSOntology#VRF> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Variable_refrigerant_flow"@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Pressure_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Outside air pressure provided by weather station or service. Typically measured in milli Bar."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Air_Pressure_Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Air Pressure Sensor"@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/1.0.3/Brick#Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Sensor"@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Snow depth measured at sight typically provided by weather station or weather service in millimetre."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Snow_Depth_Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Snow Depth Sensor"@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "UV index provided by weather station or service."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_UV_Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Weather UV Sensor"@en .
+# 
+# https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Sensor> .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Visibility depened on cloudiness typically provided by a weather service."@en .
+<https://w3id.org/moeebius/MOEEBIUSOntology#Weather_Visibility_Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Visibility Sensor"@en .
 # 
 # 
 # 
@@ -474,4 +542,4 @@
 <https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/moeebius/MOEEBIUSOntology#partsPerBillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Unit> .
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
