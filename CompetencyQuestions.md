@@ -4,7 +4,7 @@ During the development of the MOEEBIUS ontology Competency Questions (CQ) have b
 
 ## Test setup
 
-All queries have been tested on a instance of [GraphDB](http://www.ontotext.com). A clean data base has been created and OWL 2 RL reasoning profile was set active. The BrickFrame (v1.0.3), Brick (v1.0.3) and MOEEBIUSOntology (v0.0.4) have been loaded to the data base as well as the KUBIK Site instances (v0.0.4).
+All queries have been tested on a instance of [GraphDB](http://www.ontotext.com). A clean data base has been created and OWL 2 RL reasoning profile was set active. The BrickFrame (v1.0.3), Brick (v1.0.3) and MOEEBIUSOntology (v0.0.4) have been loaded to the data base as well as the [KUBIK Site instances](https://raw.githubusercontent.com/MOEEBIUS/MOEEBIUS_Ontology/master/MOEEBIUSOntology/KUBIKSite-0.0.3.ttl) (v0.0.3).
 
 The prefixes in the queries are listed below.
 
