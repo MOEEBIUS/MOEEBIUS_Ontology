@@ -6,6 +6,19 @@ During the development of the MOEEBIUS ontology Competency Questions (CQ) have b
 
 All queries have been tested on a instance of [GraphDB](http://www.ontotext.com). A clean data base has been created and OWL 2 RL reasoning profile was set active. The BrickFrame (v1.0.3), Brick (v1.0.3) and MOEEBIUSOntology (v0.0.4) have been loaded to the data base as well as the KUBIK Site instances (v0.0.4).
 
+The prefixes in the queries are listed below.
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX brick: <https://brickschema.org/schema/1.0.3/Brick#>
+PREFIX bf: <https://brickschema.org/schema/1.0.3/BrickFrame#>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/>
+PREFIX moeebius: <https://w3id.org/moeebius/MOEEBIUSOntology#>
+PREFIX Abox: <https://w3id.org/moeebius/DemoSites#>
+```
+
 ## CQ implemented in SPARQL
 
 ### Quickview
@@ -25,21 +38,6 @@ All queries have been tested on a instance of [GraphDB](http://www.ontotext.com)
 12. [What is the cassandra ID or BEPS ID of point X?](#What-is-the-cassandra-ID-or-BEPS-ID-of-point-X)
 13. [What HVAC equipment is installed in building X?](#What-HVAC-equipment-is-installed-in-building-X)
 14. [What is the quantity and unit of a zone air temperature sensor in Room X?](#What-is-the-quantity-and-unit-of-a-zone-air-temperature-sensor-in-Room-X)
-
-### Prefixes
-
-The prefixes in the queries are listed below.
-
-```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX brick: <https://brickschema.org/schema/1.0.3/Brick#>
-PREFIX bf: <https://brickschema.org/schema/1.0.3/BrickFrame#>
-PREFIX om: <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/>
-PREFIX moeebius: <https://w3id.org/moeebius/MOEEBIUSOntology#>
-PREFIX Abox: <https://w3id.org/moeebius/DemoSites#>
-```
 
 ### What are the temperature sensors in this storey?
 
