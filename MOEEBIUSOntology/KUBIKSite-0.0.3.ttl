@@ -1,0 +1,737 @@
+# Copyright (c) 2018 Technische Hochschule Nuernberg THN
+# Nuernberg, Germany
+#
+# This copyright applies to the vocabulary specification and
+# accompanying documentation in RDF. Regarding underlying technology,
+# the ontology uses W3C's RDF technology, an open web standard that can be
+# freely used by anyone.
+
+@prefix bf: <https://brickschema.org/schema/1.0.3/BrickFrame#> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/vocabularies/om-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix Abox: <https://w3id.org/moeebius/DemoSites#> .
+@prefix brick: <https://brickschema.org/schema/1.0.3/Brick#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix moeebius: <https://w3id.org/moeebius/MOEEBIUSOntology#> .
+@base <https://w3id.org/moeebius/DemoSites#> .
+
+<https://w3id.org/moeebius/KUBIKSite> rdf:type owl:Ontology ;
+                                       owl:imports <https://w3id.org/moeebius/MOEEBIUSOntology> ;
+                                       dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                       "Georg Ferdinand Schneider"^^xsd:string ;
+                                       rdfs:seeAlso <http://www.moeebius.eu> ;
+                                       owl:versionInfo "v0.0.3" ;
+                                       dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                       dcterms:title "The KUBIK site ontology."^^xsd:string ;
+                                       dcterms:description "This ontology provides instances of the KUBIK site in MOEEBIUS project."^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID
+<https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit
+<https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> rdf:type owl:AnnotationProperty .
+
+
+###  https://brickschema.org/schema/1.0.3/BrickFrame#isFedBy
+bf:isFedBy rdf:type owl:AnnotationProperty .
+
+
+###  https://brickschema.org/schema/1.0.3/BrickFrame#hasLocation
+bf:hasLocation rdf:type owl:AnnotationProperty .
+
+
+###  https://brickschema.org/schema/1.0.3/BrickFrame#isPointOf
+bf:isPointOf rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Angle
+om:Angle rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Energy
+om:Energy rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Illumiance
+om:Illumiance rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/MassFlow
+om:MassFlow rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Power
+om:Power rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Radiance
+om:Radiance rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/RelativeHumidity
+om:RelativeHumidity rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Speed
+om:Speed rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/Temperature
+om:Temperature rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degree
+om:degree rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/degreeCelsius
+om:degreeCelsius rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kiloWatt
+om:kiloWatt rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kiloWattHour
+om:kiloWattHour rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/kilogrammPerHour-Time
+om:kilogrammPerHour-Time rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/lux
+om:lux rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/metrePerSecond-Time
+om:metrePerSecond-Time rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/partsPerMillion
+om:partsPerMillion rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/vocabularies/om-2/wattPerSquareMetreSteradian
+om:wattPerSquareMetreSteradian rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01
+Abox:SI01 rdf:type owl:NamedIndividual ,
+                    moeebius:Site .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00
+Abox:SI01.BL00 rdf:type owl:NamedIndividual ,
+                         brick:Building ;
+        rdfs:label "KUBIK"^^xsd:string ;
+        rdfs:comment "KUBIK, Parque Tecnologico de Bizkaia. c/ Geldo Building 700. Derio (Spain)"^^xsd:string ;
+        geo:alt 51.0 ;
+        geo:lat 4.3295787e+01 ;
+        geo:long -2.871518e+00 ;
+                bf:isPartOf Abox:SI01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00
+Abox:SI01.BL00.CL00 rdf:type owl:NamedIndividual ,
+                              brick:Floor ;
+                     bf:isPartOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH01
+Abox:SI01.BL00.CL00.CH01 rdf:type owl:NamedIndividual ,
+                                   brick:Chiller ;
+                          bf:hasLocation Abox:SI01.BL00.CL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH01.E00
+Abox:SI01.BL00.CL00.CH01.E00 rdf:type owl:NamedIndividual ;
+                              <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH01.E00" ;
+                              <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                              <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour ;
+                              bf:hasLocation Abox:SI01.BL00.CL00 ;
+                              bf:isPointOf Abox:SI01.BL00.CL00.CH01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH01.FL00
+Abox:SI01.BL00.CL00.CH01.FL00 rdf:type owl:NamedIndividual ,
+                                        brick:Chilled_Water_Supply_Flow_Sensor ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH01.FL00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:MassFlow ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> moeebius:kilogramPerHour-Time ;
+                               bf:hasLocation Abox:SI01.BL00.CL00 ;
+                               bf:isPointOf Abox:SI01.BL00.CL00.CH01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH01.RT00
+Abox:SI01.BL00.CL00.CH01.RT00 rdf:type owl:NamedIndividual ,
+                                        brick:Chilled_Water_Return_Temperature_Sensor ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH01.RT00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                               bf:hasLocation Abox:SI01.BL00.CL00 ;
+                               bf:isPointOf Abox:SI01.BL00.CL00.CH01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH01.ST00
+Abox:SI01.BL00.CL00.CH01.ST00 rdf:type owl:NamedIndividual ,
+                                        brick:Chilled_Water_Supply_Temperature_Sensor ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH01.ST00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                               bf:hasLocation Abox:SI01.BL00.CL00 ;
+                               bf:isPointOf Abox:SI01.BL00.CL00.CH01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH02
+Abox:SI01.BL00.CL00.CH02 rdf:type owl:NamedIndividual ,
+                                   brick:Chiller ;
+                          bf:hasLocation Abox:SI01.BL00.CL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH02.E00
+Abox:SI01.BL00.CL00.CH02.E00 rdf:type owl:NamedIndividual ;
+                              <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH02.E00" ;
+                              <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                              <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour ;
+                              bf:hasLocation Abox:SI01.BL00.CL00 ;
+                              bf:isPointOf Abox:SI01.BL00.CL00.CH02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH02.RT00
+Abox:SI01.BL00.CL00.CH02.RT00 rdf:type owl:NamedIndividual ,
+                                        brick:Chilled_Water_Return_Temperature_Sensor ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH02.RT00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                               bf:hasLocation Abox:SI01.BL00.CL00 ;
+                               bf:isPointOf Abox:SI01.BL00.CL00.CH02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CH02.ST00
+Abox:SI01.BL00.CL00.CH02.ST00 rdf:type owl:NamedIndividual ,
+                                        brick:Chilled_Water_Return_Temperature_Sensor ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CH02.ST00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                               bf:hasLocation Abox:SI01.BL00.CL00 ;
+                               bf:isPointOf Abox:SI01.BL00.CL00.CH02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CHP
+Abox:SI01.BL00.CL00.CHP rdf:type owl:NamedIndividual ,
+                                  moeebius:CHP ;
+                         bf:hasLocation Abox:SI01.BL00.CL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.CHP.E00
+Abox:SI01.BL00.CL00.CHP.E00 rdf:type owl:NamedIndividual ,
+                                      brick:Energy_Meter ;
+                             <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.CHP.E00" ;
+                             <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                             <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour ;
+                             bf:hasLocation Abox:SI01.BL00.CL00 ;
+                             bf:isPointOf Abox:SI01.BL00.CL00.CHP .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.SM00.EN00
+Abox:SI01.BL00.CL00.SM00.EN00 rdf:type owl:NamedIndividual ,
+                                        moeebius:Total_Energy_Electricity_Energy_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.SM00.EN00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour ;
+							   bf:isPointOf Abox:SI01.BL00 .
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.SM00.EP00
+Abox:SI01.BL00.CL00.SM00.EP00 rdf:type owl:NamedIndividual ,
+                                        moeebius:Active_Electrical_Power_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.SM00.EP00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> moeebius:ActivePower ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWatt ;
+							   bf:isPointOf Abox:SI01.BL00 .
+
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.SP00
+Abox:SI01.BL00.CL00.SP00 rdf:type owl:NamedIndividual ,
+                                   brick:Room ;
+                          bf:isPartOf Abox:SI01.BL00.CL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.SP00.AHU00
+Abox:SI01.BL00.CL00.SP00.AHU00 rdf:type owl:NamedIndividual ,
+                                         brick:AHU ;
+                                bf:hasLocation Abox:SI01.BL00.CL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.SP00.BLR00
+Abox:SI01.BL00.CL00.SP00.BLR00 rdf:type owl:NamedIndividual ,
+                                         brick:Boiler ;
+                                bf:hasLocation Abox:SI01.BL00.CL00.SP00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.SP01
+Abox:SI01.BL00.CL00.SP01 rdf:type owl:NamedIndividual ,
+                                   brick:Room ;
+                          bf:isPartOf Abox:SI01.BL00.CL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.WS.RD
+Abox:SI01.BL00.CL00.WS.RD rdf:type owl:NamedIndividual ,
+                                    brick:Weather_Solar_Radiance_Sensor ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.WS.RD" ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Radiance ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:wattPerSquareMetreSteradian ;
+                           bf:hasLocation Abox:SI01.BL00.CL00 ;
+                           bf:isPointOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.WS.T
+Abox:SI01.BL00.CL00.WS.T rdf:type owl:NamedIndividual ,
+                                   brick:Outside_Air_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.WS.T" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.CL00 ;
+                          bf:isPointOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.WS.WD
+Abox:SI01.BL00.CL00.WS.WD rdf:type owl:NamedIndividual ,
+                                    brick:Weather_Wind_Direction_Sensor ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.WS.WD" ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Angle ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degree ;
+                           bf:hasLocation Abox:SI01.BL00.CL00 ;
+                           bf:isPointOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL00.WS.WS
+Abox:SI01.BL00.CL00.WS.WS rdf:type owl:NamedIndividual ,
+                                    brick:Weather_Wind_Speed_Sensor ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL00.WS.WS" ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Speed ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:metrePerSecond-Time ;
+                           bf:hasLocation Abox:SI01.BL00.CL01 ;
+                           bf:isPointOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL01
+Abox:SI01.BL00.CL01 rdf:type owl:NamedIndividual ,
+                              brick:Floor ;
+                     bf:isPartOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL01.SM01.EN00
+Abox:SI01.BL00.CL01.SM01.EN00 rdf:type owl:NamedIndividual ,
+                                        brick:Energy_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL01.SM01.EN00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL01.SM02.EN00
+Abox:SI01.BL00.CL01.SM02.EN00 rdf:type owl:NamedIndividual ,
+                                        brick:Energy_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL01.SM02.EN00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL01.SM03.EN00
+Abox:SI01.BL00.CL01.SM03.EN00 rdf:type owl:NamedIndividual ,
+                                        brick:Energy_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL01.SM03.EN00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL01.SM04.EN00
+Abox:SI01.BL00.CL01.SM04.EN00 rdf:type owl:NamedIndividual ,
+                                        brick:Energy_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL01.SM04.EN00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.CL01.SM05.EN00
+Abox:SI01.BL00.CL01.SM05.EN00 rdf:type owl:NamedIndividual ,
+                                        brick:Energy_Meter ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.CL01.SM05.EN00" ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Energy ;
+                               <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWattHour .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1
+Abox:SI01.BL00.P00.M1 rdf:type owl:NamedIndividual ,
+                                brick:HVAC_Zone ;
+                       bf:isFedBy Abox:SI01.BL00.P00.M1.FC ,
+                                  Abox:SI01.BL00.P00.M2.FC ;
+                       bf:isPartOf Abox:SI01.BL00.ST00 ;
+					   bf:hasPart Abox:SI01.BL00.CL00.SP00 .
+                                  
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.FC
+Abox:SI01.BL00.P00.M1.FC rdf:type owl:NamedIndividual ,
+                                   brick:FCU ;
+                          bf:isFedBy Abox:SI01.BL00.CL00.CH01 ,
+                                     Abox:SI01.BL00.CL00.CH02 ,
+                                     Abox:SI01.BL00.CL00.CHP ,
+                                     Abox:SI01.BL00.CL00.SP00.BLR00 ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.Fl
+Abox:SI01.BL00.P00.M1.Fl rdf:type owl:NamedIndividual ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.Fl" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:MassFlow ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> moeebius:kilogramPerHour-Time ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP01 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M1.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.RT
+Abox:SI01.BL00.P00.M1.RT rdf:type owl:NamedIndividual ,
+                                   brick:Return_Water_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.RT" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP01 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M1.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.ST
+Abox:SI01.BL00.P00.M1.ST rdf:type owl:NamedIndividual ,
+                                   brick:Hot_Water_Supply_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.ST" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP01 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M1.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.T
+Abox:SI01.BL00.P00.M1.T rdf:type owl:NamedIndividual ,
+                                  brick:Zone_Air_Temperature_Sensor ;
+                         <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.T" ;
+                         <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                         <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                         bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+						 
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.T2
+Abox:SI01.BL00.P00.M1.T2 rdf:type owl:NamedIndividual ,
+                                   brick:Zone_Air_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.T2" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.TI
+Abox:SI01.BL00.P00.M1.TI rdf:type owl:NamedIndividual ,
+                                   brick:Zone_Air_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.TI" ;
+						  <https://w3id.org/moeebius/MOEEBIUSOntology#bepsID> "EnergyPlus/KUBIK/RoomM1/ZoneTemp" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M1.ThP
+Abox:SI01.BL00.P00.M1.ThP rdf:type owl:NamedIndividual ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M1.ThP" ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Power ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWatt ;
+                           bf:hasLocation Abox:SI01.BL00.ST00.SP01 ;
+                           bf:isPointOf Abox:SI01.BL00.P00.M1.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M2.FC
+Abox:SI01.BL00.P00.M2.FC rdf:type owl:NamedIndividual ,
+                                   brick:FCU ;
+                          bf:isFedBy Abox:SI01.BL00.CL00.CH01 ,
+                                     Abox:SI01.BL00.CL00.CH02 ,
+                                     Abox:SI01.BL00.CL00.CHP ,
+                                     Abox:SI01.BL00.CL00.SP00.BLR00 ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M2.Fl
+Abox:SI01.BL00.P00.M2.Fl rdf:type owl:NamedIndividual ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M2.Fl" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:MassFlow ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> moeebius:kilogramPerHour-Time ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP02 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M2.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M2.RT
+Abox:SI01.BL00.P00.M2.RT rdf:type owl:NamedIndividual ,
+                                   brick:Return_Water_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M2.RT" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP02 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M2.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M2.ST
+Abox:SI01.BL00.P00.M2.ST rdf:type owl:NamedIndividual ,
+                                   brick:Hot_Water_Supply_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M2.ST" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP02 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M2.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M2.ThP
+Abox:SI01.BL00.P00.M2.ThP rdf:type owl:NamedIndividual ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M2.ThP" ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Power ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWatt ;
+                           bf:hasLocation Abox:SI01.BL00.ST00.SP02 ;
+                           bf:isPointOf Abox:SI01.BL00.P00.M2.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M3.FC
+Abox:SI01.BL00.P00.M3.FC rdf:type owl:NamedIndividual ,
+                                   brick:FCU ;
+                          bf:isFedBy Abox:SI01.BL00.CL00.CH01 ,
+                                     Abox:SI01.BL00.CL00.CH02 ,
+                                     Abox:SI01.BL00.CL00.CHP ,
+                                     Abox:SI01.BL00.CL00.SP00.BLR00 ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP03 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M3.Fl
+Abox:SI01.BL00.P00.M3.Fl rdf:type owl:NamedIndividual ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M3.Fl" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:MassFlow ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> moeebius:kilogramPerHour-Time ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP03 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M3.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M3.RT
+Abox:SI01.BL00.P00.M3.RT rdf:type owl:NamedIndividual ,
+                                   brick:Return_Water_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M3.RT" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP03 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M3.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M3.ST
+Abox:SI01.BL00.P00.M3.ST rdf:type owl:NamedIndividual ,
+                                   brick:Hot_Water_Supply_Temperature_Sensor ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M3.ST" ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                          <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                          bf:hasLocation Abox:SI01.BL00.ST00.SP03 ;
+                          bf:isPointOf Abox:SI01.BL00.P00.M3.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.P00.M3.ThP
+Abox:SI01.BL00.P00.M3.ThP rdf:type owl:NamedIndividual ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.P00.M3.ThP" ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Power ;
+                           <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:kiloWatt ;
+                           bf:hasLocation Abox:SI01.BL00.ST00.SP03 ;
+                           bf:isPointOf Abox:SI01.BL00.P00.M3.FC .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00
+Abox:SI01.BL00.ST00 rdf:type owl:NamedIndividual ,
+                              brick:Floor ;
+                     bf:isPartOf Abox:SI01.BL00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP00
+Abox:SI01.BL00.ST00.SP00 rdf:type owl:NamedIndividual ,
+                                   brick:Room ;
+                          bf:isPartOf Abox:SI01.BL00.ST00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP00.NOD00.CO2
+Abox:SI01.BL00.ST00.SP00.NOD00.CO2 rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP00.NOD00.CO2" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:partsPerMillion ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP00.NOD00.LUX
+Abox:SI01.BL00.ST00.SP00.NOD00.LUX rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP00.NOD00.LUX" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Illumiance ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:lux ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP00.NOD00.OCCU
+Abox:SI01.BL00.ST00.SP00.NOD00.OCCU rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP00.NOD00.OCCU" ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP00.NOD00.RH
+Abox:SI01.BL00.ST00.SP00.NOD00.RH rdf:type owl:NamedIndividual ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP00.NOD00.RH" ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:RelativeHumidity ;
+                                   bf:hasLocation Abox:SI01.BL00.ST00.SP00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP00.NOD00.TEMP
+Abox:SI01.BL00.ST00.SP00.NOD00.TEMP rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP00.NOD00.TEMP" ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP01
+Abox:SI01.BL00.ST00.SP01 rdf:type owl:NamedIndividual ,
+                                   brick:Room ;
+                          bf:isPartOf Abox:SI01.BL00.ST00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP01.NOD00.CO2
+Abox:SI01.BL00.ST00.SP01.NOD00.CO2 rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP01.NOD00.CO2" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:partsPerMillion ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP01.NOD00.LUX
+Abox:SI01.BL00.ST00.SP01.NOD00.LUX rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP01.NOD00.LUX" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Illumiance ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:lux ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP01.NOD00.OCCU
+Abox:SI01.BL00.ST00.SP01.NOD00.OCCU rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP01.NOD00.OCCU" ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP01.NOD00.RH
+Abox:SI01.BL00.ST00.SP01.NOD00.RH rdf:type owl:NamedIndividual ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP01.NOD00.RH" ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:RelativeHumidity ;
+                                   bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP01.NOD00.TEMP
+Abox:SI01.BL00.ST00.SP01.NOD00.TEMP rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP01.NOD00.TEMP" ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP01 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP02
+Abox:SI01.BL00.ST00.SP02 rdf:type owl:NamedIndividual ,
+                                   brick:Room ;
+                          bf:isPartOf Abox:SI01.BL00.ST00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP02.NOD00.CO2
+Abox:SI01.BL00.ST00.SP02.NOD00.CO2 rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP02.NOD00.CO2" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:partsPerMillion ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP02.NOD00.LUX
+Abox:SI01.BL00.ST00.SP02.NOD00.LUX rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP02.NOD00.LUX" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Illumiance ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:lux ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP02.NOD00.OCCU
+Abox:SI01.BL00.ST00.SP02.NOD00.OCCU rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP02.NOD00.OCCU" ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP02.NOD00.RH
+Abox:SI01.BL00.ST00.SP02.NOD00.RH rdf:type owl:NamedIndividual ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP02.NOD00.RH" ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:RelativeHumidity ;
+                                   bf:hasLocation Abox:SI01.BL00.ST00.SP02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP02.NOD00.TEMP
+Abox:SI01.BL00.ST00.SP02.NOD00.TEMP rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP02.NOD00.TEMP" ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP02 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP03
+Abox:SI01.BL00.ST00.SP03 rdf:type owl:NamedIndividual ,
+                                   brick:Room ;
+                          bf:isPartOf Abox:SI01.BL00.ST00 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP03.NOD00.CO2
+Abox:SI01.BL00.ST00.SP03.NOD00.CO2 rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP03.NOD00.CO2" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:partsPerMillion ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP03 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP03.NOD00.LUX
+Abox:SI01.BL00.ST00.SP03.NOD00.LUX rdf:type owl:NamedIndividual ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP03.NOD00.LUX" ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Illumiance ;
+                                    <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:lux ;
+                                    bf:hasLocation Abox:SI01.BL00.ST00.SP03 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP03.NOD00.OCCU
+Abox:SI01.BL00.ST00.SP03.NOD00.OCCU rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP03.NOD00.OCCU" ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP03 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP03.NOD00.RH
+Abox:SI01.BL00.ST00.SP03.NOD00.RH rdf:type owl:NamedIndividual ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP03.NOD00.RH" ;
+                                   <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:RelativeHumidity ;
+                                   bf:hasLocation Abox:SI01.BL00.ST00.SP03 .
+
+
+###  https://w3id.org/moeebius/KUBIKSite#SI01.BL00.ST00.SP03.NOD00.TEMP
+Abox:SI01.BL00.ST00.SP03.NOD00.TEMP rdf:type owl:NamedIndividual ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#cassandraID> "SI01.BL00.ST00.SP03.NOD00.TEMP" ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasQuantity> om:Temperature ;
+                                     <https://w3id.org/moeebius/MOEEBIUSOntology#hasUnit> om:degreeCelsius ;
+                                     bf:hasLocation Abox:SI01.BL00.ST00.SP03 .
