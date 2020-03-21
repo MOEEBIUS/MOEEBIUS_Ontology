@@ -237,7 +237,7 @@ BIND(  Abox:SI01.BL00.ST00.SP01 as ?room )
 }
 ```
 
-## Literature
+## References
 
 1. G. D. Kontes, H. Qiu, L. Wang, M. Visser, G. F. Schneider, N. Panagiotidou, G. Grün, V. Sánchez, A. Romero-Amorrortu, P. de Agustin-Camacho, J. Rojicek, Z. Schindler, J. Malanik, A. Tsitsanis, T. Papapolyzos, C. Beder, M. Klepal, P. van Tooren, A. Nales, A. Stam, C. Malavazos, D6.8: MOEEBIUS Integrated DSS (Final Version), MOEEBIUS consortium, Brussels, Belgium (2018).
 2. J. A. Chica, I. Apraiz, P. Elguezabal, M. O. Rrips, V. Sánchez, B. Tellado, Kubik: Open building approach for the construction of an unique experimental facility aimed to improve energy efficiency in buildings, open house international 36 (1) (2011) 63.
