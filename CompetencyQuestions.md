@@ -23,7 +23,6 @@ PREFIX Abox: <https://w3id.org/moeebius/DemoSites#>
 
 ### Quickview
 
-0. [Prefixes](#Prefixes)
 1. [What are the temperature sensors in this storey?](#What-are-the-temperature-sensors-in-this-storey)
 2. [What are the sensors in this room?](#What-are-the-sensors-in-this-room)
 3. [Which final spaces are served by Boiler B?](#Which-final-spaces-are-served-by-Boiler-B)
